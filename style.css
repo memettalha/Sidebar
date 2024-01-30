@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url("manzara.png") ;
+    background-size: cover;
+}
+
+.main{
+    position: relative;    
+}
+
+.btn_one i{
+    font-size: 30px;
+    color:#fff;
+    font-weight:700;
+    position:absolute;
+    top:20px;
+    left:20px;
+    transition:all 0.5s linear ;
+}
+
+.btn-two i{
+    transition:all 0.5s linear ;
+
+}
+
+.sidebar_menu{
+    width:280px;
+    height:100vh;
+    box-shadow:0px 2px 4px (255,255,255,1);
+    background:rgba(255,255,255,0.1);
+    position: absolute;
+    left:-300px;
+    top:0;
+}
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 20px;
+    box-shadow: 0px 2px 4px rgb(255, 255, 255,0.5);
+    width:100%;
+    position: absolute;
+    left:-20px;
+    top:-10px;
+    padding:10px 0;
+}
+
+.top a{
+    text-decoration: none;
+    font-size:25px;
+    margin-left: calc(40%);
+    color:#fff;
+}
+.top i{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.top i:hover{
+    background-color:rgb(245, 245, 173);
+}
+
+.menü{
+    margin-top:20px;
+}
+
+.sidebar_body{
+    margin-top:60px;
+}
+.sidebar_body ul li{
+    padding:16px 20px;
+    list-style: none;
+    margin-top:6px;
+
+}
+
+.sidebar_body ul li:hover{
+    border:1px solid #9c9999;
+    cursor:pointer;
+    border-left: 2px solid #fff;
+    box-shadow: 0 0 4px rgb(255,255,255,0.5);
+}
+
+.sidebar_body li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    position: absolute;
+    left:50px;
+
+}
+
+.sidebar_body li i{
+    color:white;
+    padding:3px;
+}
+
+
+
+#check{
+    display:none;
+}
+
+#check:checked  ~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .menü .btn-two i{
+    opacity:1;
+}
+
+.footer ul{
+    display:flex;
+}
+
+.footer ul li{
+    margin:10px 20px;
+    list-style: none;
+}
+
+.footer li a{
+    color:rgb(255, 255, 255,0.5);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer li a:hover{
+    color:#fff;
+}
+
